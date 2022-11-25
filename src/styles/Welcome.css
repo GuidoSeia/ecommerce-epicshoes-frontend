@@ -9,7 +9,6 @@
     width: 40%;
     height: 90vh;
     background-color: white;
-    border-right: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,16 +25,21 @@
 }
 
 .container-info{
-    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     height: 80%;
     width: 90%;
 }
 
 .title-home{
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 5px;
     font-weight: bolder;
+    height: fit-content;
     color: white;
     -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: blue;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
 }
+
