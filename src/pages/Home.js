@@ -1,12 +1,12 @@
 import React from 'react'
 import "../styles/Home.css"
-import NavBar from "../components/NavBar"
+import Welcome from "../components/Welcome"
 
 
 function Home() {
   return (
     <div >
-        <NavBar/>
+        <Welcome/>
     </div>
   )
 }
