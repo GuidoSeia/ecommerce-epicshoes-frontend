@@ -3,7 +3,7 @@ import "../styles/NavBar.css"
 
 export default function NavBar() {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar">
   <div className="flex-1">
     <a className="btn btn-ghost normal-case text-xl">EpicFeet</a>
   </div>
@@ -15,7 +15,7 @@ export default function NavBar() {
           <span className="badge badge-sm indicator-item">8</span>
         </div>
       </label>
-      <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
+      <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-52  shadow">
         <div className="card-body">
           <span className="font-bold text-lg">8 Items</span>
           <span className="text-info">Subtotal: $999</span>
