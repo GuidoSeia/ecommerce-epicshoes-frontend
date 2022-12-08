@@ -3,7 +3,7 @@
 }
 
 .brands-title{
-        font-size: 2.3rem;
+        font-size: 3rem;
         letter-spacing: 5px;
         font-weight: bolder;
         height: fit-content;
@@ -14,3 +14,70 @@
         border-top: 2.5px solid black;
     
 }
+
+.card-title{
+    font-size: 2.5rem;
+    letter-spacing: .4rem;
+    font-family:  "Roboto" ;
+}
+
+
+.card-title:hover{
+    font-size: 4rem;
+}
+
+
+
+.cards {
+    perspective: 500px;
+  }
+  
+  .card {
+    width: 400px;
+    height: 550px;
+    background: #16161d;
+    border: 2px solid #555555;
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+    margin-bottom: 4rem;
+   
+  }
+  
+  .card:hover {
+    transform: translateZ(5px) rotateX(10deg) rotateY(10deg);
+  }
+  
+  .card_title {
+    color: #fff;
+    position: absolute;
+    font-size: 3rem !important;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+    font: bold   1.5rem monospace;
+    text-shadow: -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  }
+  
+  .card:hover .card_title {
+    transform: translateZ(50px);
+  }
+
+  .photo-brands {
+    z-index: -1;
+    opacity: .8;
+  }
+
+  .photo-brands:hover {
+    opacity: 1;
+  }
+
+  .div-brands{
+    height: 100vh;
+  }
