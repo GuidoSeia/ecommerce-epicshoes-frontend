@@ -47,18 +47,5 @@ export default function Carousel() {
     
   )
 }
+}
 
-
-{/* <div className='flex flex-col items-center'>
-<h2 className='brands-title flex text-center w-96 justify-center m-10'>BRANDS</h2>
-  <div className="carousel flex w-11/12 mb-5">
-<div id="slide1" className="carousel-item relative w-full">
-<img src="https://placeimg.com/800/200/arch" className="w-full" />
-<div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-  <a href="#slide4" className="btn btn-circle">❮</a> zx
-  <a href="#slide2" className="btn btn-circle">❯</a>
-</div>
-</div> 
-
-</div>
-</div> */}
