@@ -65,6 +65,7 @@ const productsApi = createApi({
 export default productsApi
 
 export const { useGetAllProductsQuery ,
+    
      useGetNewProductMutation,
       useGetProductQuery,
       useGetRemoveProductMutation,
