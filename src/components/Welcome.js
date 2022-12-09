@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/Welcome.css"
+import {Link as LinkRouter} from 'react-router-dom'
 
 export default function Welcome() {
   return (
@@ -10,7 +11,7 @@ export default function Welcome() {
               <div className='flex items-center justify-center text-black'>              
                 <p className='w-96 text-center text-2xl'>«A new story for each shoe, designed for the freedom of walking»</p>            
             </div>      
-            <input type="button" value="Shop Now !" className="btn mt-8 text-white" />   
+            <LinkRouter to={'/products'}><input type="button" value="Shop Now !" className="btn mt-8 text-white" />   </LinkRouter>
           </div>
         </div>
         <div className='img'></div>
