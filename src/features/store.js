@@ -4,13 +4,13 @@ import productsApi from './productsApi'
 
 
 export default configureStore({
+    
     reducer: {
         [productsApi.reducerPath]: productsApi.reducer,
         refresh: refreshSlice,
        
     },
-    middleware: (getAllProducts) => getAllProducts({
-        immutableCheck: false,
-        serializableCheck: false
-    })
-})
+    middleware: (getAllProducts) => 
+    getAllProducts().concat(productsApi.middleware),
+    },
+    )
