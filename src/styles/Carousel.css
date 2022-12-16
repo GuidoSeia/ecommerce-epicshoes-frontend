@@ -2,7 +2,7 @@
     min-height: 5vh;
 }
 
-.brands-title{
+.brands-titles{
         font-size: 3rem;
         letter-spacing: 5px;
         font-weight: bolder;
@@ -12,6 +12,7 @@
         -webkit-text-stroke-color: rgb(0, 0, 0);
         border-bottom: 2.5px solid black;
         border-top: 2.5px solid black;
+        background-color: white;
     
 }
 
@@ -80,4 +81,5 @@
 
   .div-brands{
     height: 100vh;
+    background-image: url('../assets/fondoCuadro.webp');
   }
