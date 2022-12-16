@@ -8,7 +8,7 @@ export default function Carousel() {
 
   return (
     <div className='div-brands flex justify-center flex-col items-center'>
-      <h2 className='brands-title w-96 text-center m-5'>BRANDS</h2>
+      <h2 className='brands-titles w-96 text-center m-5'>BRANDS</h2>
       <div className='flex items-center justify-center w-10/12'>
         <div className='flex items-center flex-wrap  m-7'>
           <div className="cards">

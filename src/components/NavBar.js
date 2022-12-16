@@ -1,15 +1,17 @@
 import React from 'react'
 import "../styles/NavBar.css"
 import logo from '../assets/logo.jpg';
+import {Link as LinkRouter} from 'react-router-dom'
+
 
 export default function NavBar() {
   return (
     <div className="navbar">
-      <div className="flex-1">
+      <div className="flex-2">
     <a className="btn btn-ghost normal-case bg-black text-xl text-white">Shop</a>
   </div>
-  <div className=" flex-1 h-full mr-12	">
-    <img src={logo} alt="logo" className="h-full"/>
+  <div className=" flex-1 h-full mr-12 flex justify-center">
+    <LinkRouter className="flex-1 h-full mr-12 flex justify-center" to={"/"}><img src={logo} alt="logo" className="h-full"/></LinkRouter>
   </div>
   <div className="flex-none">
     <div className="dropdown dropdown-end">
