@@ -1,19 +1,20 @@
 import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home";
-import WebsiteLayout from './layouts/Layout';
 import ProductsPage from './pages/Products'
+import SignIn from './pages/SignInPage';
+import SignUp from './pages/SignUpPage';
 
 function App() {
   return (
     
       <BrowserRouter>
-        <WebsiteLayout>
           <Routes>
           <Route path='/' element={<Home />} />         
           <Route path='/products' element={<ProductsPage />} />
+          <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
           </Routes>
-        </WebsiteLayout>
       </BrowserRouter>
     
     

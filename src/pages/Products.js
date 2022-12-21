@@ -4,6 +4,7 @@ import '../styles/Product.css'
 import { refresh } from '../features/refreshSlice'
 import { useSelector, useDispatch } from 'react-redux';
 import { useState, useEffect } from 'react'
+import Layout from "../layouts/Layout"
 
 
 export default function Products() {
@@ -19,6 +20,7 @@ export default function Products() {
     }, [refreshed])
 
   return (
+    <Layout>
     <div className='page-products flex items-center justify-center mt-10 mb-5'>
       <div className='flex flex-wrap w-9/12 bg-yellow-50'>
       {getProducts?.response?.length > 0 ?
@@ -50,5 +52,6 @@ export default function Products() {
       }   
       </div>
 </div>
+</Layout>
   )
 }
