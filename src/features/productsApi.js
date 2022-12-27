@@ -17,6 +17,9 @@ const productsApi = createApi({
             query: (id) => '/products/' + id
         }),
 
+        getFilteredProducts: builder.query({ query: (type) => `/products?type=${type}` }),
+
+
         
         getNewProduct: builder.mutation ({
             query (product) {
@@ -70,4 +73,5 @@ export const { useGetAllProductsQuery ,
       useGetProductQuery,
       useGetRemoveProductMutation,
       useGetUpdateProductMutation, 
+      useGetFilteredProductsQuery
     } = productsApi

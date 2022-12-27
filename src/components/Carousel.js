@@ -2,6 +2,8 @@ import React from 'react'
 import foto1 from "../assets/fondo.jpg"
 import foto2 from "../assets/fondo1.jpg"
 import "../styles/Carousel.css"
+import { Link as LinkRouter } from 'react-router-dom'
+
 
 export default function Carousel() {
 
@@ -12,34 +14,44 @@ export default function Carousel() {
       <div className='flex items-center justify-center w-10/12'>
         <div className='flex items-center flex-wrap  m-7'>
           <div className="cards">
-            <figure className="card">
-                <figcaption className="card_title">NIKE</figcaption>
-                <img src="https://images.pexels.com/photos/2529157/pexels-photo-2529157.jpeg?auto=compress&cs=tinysrgb&w=600" className="photo-brands w-full h-full"/>
-            </figure>
+            <LinkRouter to={'/products/?brand=Nike'}>
+              <figure className="card">
+                  <figcaption className="card_title">NIKE</figcaption>
+                  <img src="https://images.pexels.com/photos/2529157/pexels-photo-2529157.jpeg?auto=compress&cs=tinysrgb&w=600" className="photo-brands w-full h-full"/>
+              </figure>
+            </LinkRouter>
+          
           </div>
         </div>
         <div className='flex items-center flex-wrap m-7'>
           <div className="cards">
+          <LinkRouter to={'/products/?brand=Adidas'}>
             <figure className="card">
             <img src="https://images.pexels.com/photos/8378567/pexels-photo-8378567.jpeg?auto=compress&cs=tinysrgb&w=600" className="photo-brands w-full h-full"/>
                 <figcaption className="card_title">ADIDAS</figcaption>
             </figure>
+          </LinkRouter>
+
           </div>
         </div>
         <div className='flex items-center flex-wrap m-7'>
           <div className="cards">
+          <LinkRouter to={'/products/?brand=Converse'}>
             <figure className="card">
             <img src="https://images.pexels.com/photos/2969318/pexels-photo-2969318.jpeg?auto=compress&cs=tinysrgb&w=600" className="photo-brands w-full h-full"/>
                 <figcaption className="card_title">CONVERSE</figcaption>
             </figure>
+          </LinkRouter>
           </div>
         </div>
         <div className='flex items-center flex-wrap m-7'>
           <div className="cards">
+          <LinkRouter to={'/products/?brand=Puma'}>
             <figure className="card">
             <img src="https://images.pexels.com/photos/5967666/pexels-photo-5967666.png?auto=compress&cs=tinysrgb&w=600" className="photo-brands w-full h-full"/>
                 <figcaption className="card_title">PUMA</figcaption>
             </figure>
+            </LinkRouter>
           </div>
         </div>
       </div>
