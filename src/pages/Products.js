@@ -1,5 +1,5 @@
 import React from 'react'
-import { useGetAllProductsQuery } from '../features/productsApi'
+import { useGetAllProductsQuery, useGetFilteredProductsQuery } from '../features/productsApi'
 import '../styles/Product.css'
 import { refresh } from '../features/refreshSlice'
 import { useSelector, useDispatch } from 'react-redux';
@@ -9,10 +9,28 @@ import Layout from "../layouts/Layout"
 
 export default function Products() {
 
-  const {data: getProducts, refetch } = useGetAllProductsQuery()
-  console.log(getProducts)
-
   const refreshed = useSelector((state) => state.refresh.refreshState)
+
+  const [typeFilter, setTypeFilter] = useState()
+  const handleCategoryFilter = (e) => {
+      if (e.target.value === "all") {
+          setTypeFilter("")
+      }
+      setTypeFilter(e.target.value)
+  }
+
+  const { data: getProducts, refetch } = useGetAllProductsQuery()
+  const { data: products } = useGetFilteredProductsQuery(typeFilter)
+
+
+  useEffect(() => {
+    if (!brand) {
+        setTypeFilter("all")
+    } else {
+        setTypeFilter(brand)
+    }
+}, [])
+
 
 
   useEffect(() => {
